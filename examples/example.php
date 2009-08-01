@@ -56,7 +56,7 @@ try {
     
     $api->setToken($api);
     
-    $api->list('cases');
+    var_dump($api->list('cases'));
     
     $api->logout();
     
