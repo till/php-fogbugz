@@ -1,0 +1,10 @@
+<?php
+// fiddle with include path
+$path = realpath(dirname(__FILE__) . '/../);
+set_include_path($path . ':' . get_include_path());
+
+require_once 'Services/Fogbugz.php';
+
+$url      = 'http://cia.fogbugz.com';
+$email    = 'johndoe@example.org';
+$password = 'furtive';
